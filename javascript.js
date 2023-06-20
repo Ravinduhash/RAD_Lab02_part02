@@ -182,5 +182,54 @@ function exercise05_3(x,y,z){
 }
 
 function exercise05_4(x){
-    var count = 1
+    var count = 0;
+    for(let i=1; i<x; i++ ){
+        if(x%i==0){
+            count++;
+        }
+    }
+    if(count>1){
+        document.writeln("Not a prime number");
+    }
+    else{
+        document.writeln("prime number");
+    }
 }
+
+function exercise05_5(){
+    for(let i=1; i<30; i++){
+        if(i%2==0){
+            document.writeln(i);
+        }
+    }
+}
+
+function exercise05_6(){
+    const array = [10,20,30,40,50,60];
+    for(let i=0; i<array.length; i++){
+        document.writeln(array[i]);
+    }
+}
+
+function exercise05_7(){
+    const numbers = [80,30,40,50,23];
+    numbers[2]=78;
+    document.writeln("numbers[2] is ",numbers[2]);
+    document.writeln("length of the array is ",numbers.length);
+    
+    for(let i=0; i<numbers.length; i++){
+        for(let j=0; j<numbers.length-1; j++){
+            if(numbers[j]>numbers[j+1]){
+                var temp = numbers[j];
+                numbers[j]= numbers[j+1];
+                numbers[j+1] = temp;
+            }
+        }
+    }
+
+    for(let i=0; i<numbers.length; i++){
+        document.writeln(numbers[i]);
+    }
+
+}
+
