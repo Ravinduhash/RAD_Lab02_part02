@@ -233,3 +233,28 @@ function exercise05_7(){
 
 }
 
+function exercise05_8(){
+    const names = ["sadun" ,"kamal","nimal","ruwan"];
+    let str = names.toString();
+    document.writeln("The array: ",str);
+    delete names[4];
+    names.push("nuwani");
+    str = names.toString();
+    document.writeln("The array: ",str);
+}
+
+function exercise05_9(){
+    const myGirls = ["Cecilie", "Lone"];
+    const myBoys = ["Emil", "Tobias", "Linus"];
+    const array = myGirls.concat(myBoys);
+    document.writeln("The merged array ", array);
+}
+
+function exercise05_10(){
+    const numbersArray = [1,13,22,123,49];
+    var sum = 0;
+    for(let i=0; i<numbersArray.length; i++){
+        sum = sum + numbersArray[i]
+    }
+    document.writeln("Sum of the array is ",sum);
+}
