@@ -34,6 +34,7 @@ function exercise02_2(){
 }
 
 function exercise02_3(x,y){
+    
     document.writeln("The area of the rectangle is ",x*y);
 }
 
